@@ -193,8 +193,8 @@ unsafe fn create_view_class() -> &'static Class {
         MouseEvent::CursorLeft
     );
 
-    add_simple_keyboard_class_method!(class, keyDown);
-    add_simple_keyboard_class_method!(class, keyUp);
+    // add_simple_keyboard_class_method!(class, keyDown);
+    // add_simple_keyboard_class_method!(class, keyUp);
     add_simple_keyboard_class_method!(class, flagsChanged);
 
     class.add_ivar::<*mut c_void>(BASEVIEW_STATE_IVAR);
